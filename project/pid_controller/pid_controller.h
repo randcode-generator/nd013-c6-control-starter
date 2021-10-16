@@ -17,19 +17,30 @@ public:
     /*
     * Errors
     */
+    double p_error = 0;
+    double i_error = 0;
+    double d_error = 0;
+    double prev_cte = 0;
 
     /*
     * Coefficients
     */
+    double Kpi;
+    double Kii;
+    double Kdi;
 
     /*
     * Output limits
     */
+    double output_lim_maxi;
+    double output_lim_mini;
   
     /*
     * Delta time
     */
+    double delta_time;
 
+  	bool initvalue = true;
     /*
     * Constructor
     */
